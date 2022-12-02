@@ -33,6 +33,8 @@ body{
 }
 .container{
     width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .flex {
     display: flex;
@@ -292,6 +294,7 @@ header ul a:hover{
 }
 
 .projects_galeria .widget_conteudo_section{
+    border-radius: 5px;
     opacity: 0;
     height: 100%;
     width: 100%;
@@ -304,6 +307,7 @@ header ul a:hover{
     margin-bottom: 0px;
 }
 .projects_photo{
+    border-radius: 5px;
     min-height: 145px;
     min-width: 225px;
     margin: 15px;
@@ -367,10 +371,18 @@ header ul a:hover{
 .conteudo_our_team .team{
     padding: 50px 40px 40px 40px;
     background-color: var(--backcolor-white);
-    margin: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
     z-index: 1;
     min-width: 350px;
     border-radius: 5px;
+}
+.conteudo_our_team .team:hover{
+    scale: 1.05;
+    box-shadow: 0px 0px 50px rgb(0 0 0 / 96%);
+    z-index: 2;
+
+
 }
 .conteudo_our_team .team .photo{
     width: 180px;
@@ -385,10 +397,10 @@ header ul a:hover{
     margin-bottom: 25px;
 
 }
-#our_team .icon_social img{
+.icon_social img{
     height: 10px;
 }
-#our_team .icon_social{
+.icon_social{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,7 +412,7 @@ header ul a:hover{
     cursor: pointer;
      margin: 3px;
 }
-#our_team .icon_social:hover{
+.icon_social:hover{
     background-color: var(--backcolor-destaque);
 }
 
@@ -456,10 +468,9 @@ header ul a:hover{
 #empresa .logo_empresa{
     flex:1;
 }
-#empresa{
+.cont_style_2{
     border-top: 1px solid #cfcfcf;
     border-bottom: 1px solid #cfcfcf;
-    box-shadow: 0px 0px 5px #00000042;
     height: 155px;
 }
 #price{
@@ -510,9 +521,15 @@ header ul a:hover{
     margin-top: 4px;
     margin-bottom: 4px;
 }
+.paddingsection {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
 #premium{
     padding-top: 60px;
     padding-bottom: 50px;
+    border-top: 1px solid #cfcfcf;
+    border-bottom: 1px solid #cfcfcf;
 }
 #premium .premium_image{
     width:500px;
@@ -541,3 +558,223 @@ header ul a:hover{
     border-bottom: 1px solid #cfcfcf;
     padding-bottom: 30px;
 }
+#somefacts{
+    background-color: #000;
+    padding: 60px 0px 40px 0px;
+}
+.facts{
+    padding: 0px 20px;
+    flex: 1;
+}
+#somefacts h1{
+    font-size: 45px;
+    font-weight: 700;
+    
+}
+#somefacts .divisoria{
+    width:20px;
+    height:4px;
+    background-color: #7e7e7e;
+    margin-bottom: 10px;
+}
+#somefacts .facts h4{
+    max-width: 155px;
+}
+#somefacts .facts h5{
+    max-width: 160px;
+
+    line-height: 20px;
+}
+.conteudo_facts{
+    width: 100%;
+}
+#socialshare{
+    height: 75px;
+}
+#socialshare .container{
+    width: 700px;
+}
+.b_share .icon_share{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 50px;
+}
+.twitter{
+    background-color: #33C4F0;
+}
+.linkedin{
+    background-color:#137CB5 ;
+}
+.facebook{
+    background-color:#336296;
+}
+.googleplus{
+    background-color: #E64238;
+}
+.pinterest{
+    background-color:#B51B27 ;
+}
+.b_share{
+    flex: 1;
+}
+.b_share_share{
+    flex: 2;
+}
+#socialshare h3{
+    font-size: 14px;
+    color: #aeaeae;
+    margin-left: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#socialshare h6{
+    margin-left: 5px;
+    font-weight: 300;
+    color: #aeaeae;
+}
+input,
+textarea{
+    margin: 15px;
+    display: block;
+    color:#616161;
+    font-weight: 300;
+    height: 40px;
+    border: none;
+    background-color:transparent;
+    border-bottom: 2px solid #aeaeae;
+}
+input::placeholder,
+textarea::placeholder{
+    text-transform: uppercase;
+}
+#form{
+    background-color: #f7f7f7;
+}
+input:focus-visible,
+textarea:focus-visible{
+    outline: 0;
+}
+#form textarea:focus-visible{
+    border-top: 1px dashed #aeaeaeb4;
+    border-left: 1px dashed #aeaeaeb4;
+    border-right: 1px dashed #aeaeaeb4;
+    border-radius: 5px;
+}
+#form form{
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 600px;
+}
+#form textarea{
+    padding: 15px;
+    margin-top: 50px;
+    min-width: calc(100% - 30px);
+    max-width: calc(100% - 30px);
+    max-height: 200px;
+    min-height: 40px;
+}
+#form .input50{
+    flex: 1;
+}
+#form .input100{
+    width: calc(100% - 15px);
+}
+#form form div{
+    width: 100%;
+}
+#form div form div.flex.center input{
+    width: fit-content;
+    color: var(--textcolor-white);
+    font-size: 11px;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 12px 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: var(--backcolor-destaque);
+}
+
+#maps{
+    padding: 35px 0px;
+    filter: saturate(0.0);
+    background-image: url('../../complementos/mapa.jpg');
+}
+#maps .container{
+    height: 100%;
+}
+
+#maps .share_maps{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 30px 15px 30px 40px;
+    width:540px;
+    box-shadow: 0px 0px 25px #00000036;
+}
+#maps .b_share{
+    flex: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#maps .b_share h6{
+    margin-left: 15px;
+    color: #8e8e8e;
+    font-weight: 300;
+    line-height: 26px;
+    color:#7e7e7e;
+}
+.footer_area{
+    margin: 15px;
+    flex:1;
+    height: 180px;
+}
+.footer1{
+    display: flex;
+    justify-content: space-between;
+}
+.footer1 h2{
+    color: var(--textcolor-white);
+    font-size: 14px;
+}
+.footer1 a{
+    color: var(--textcolor-destaque);
+}
+.footer2 p{
+    font-size: 11px;
+    font-weight: 300;
+    color: #7e7e7e;
+    line-height: 20px;
+}
+footer{
+    background-color: #000;
+    color:var(--textcolor-white);
+    padding: 20px 0px;
+}
+footer .icon_social{
+    background-color: #373737;
+}
+.footer3{
+    background-color: #373737;
+    border-radius: 5px;
+}
+body > footer > div > div.footer_area.flex.column.center.acenter.footer3 > form > input[type=submit]:nth-child(2){
+    width: fit-content;
+    color: var(--textcolor-white);
+    font-size: 11px;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 12px 40px;
+    background-color: var(--backcolor-destaque);
+}
+body > footer > div > div.footer_area.flex.column.center.acenter.footer3 > form > input[type=email]:nth-child(1){
+       color: #9e9e9e;
+}
+body > footer > div > div.footer_area.flex.column.center.acenter.footer3 > form > input[type=email]:nth-child(1)::placeholder{
+    text-align: center;
+    color: #9e9e9e;
+}
+

@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
     <meta name="viewport" content="width=device-width, user-scalable=0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?family= Montserrat: wght @300;400;600;700 & display=swap" rel="stylesheet">
+    <link href="https: //fonts.googleapis.com/css2?family= Montserrat: wght @300;400;600;700 & display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Projeto | Awax site</title> 
+    <title>Projeto | Awax site</title>
 
     <script type="text/javascript">
-        window.onload = function (){
-            document.querySelector("#banner .botao_slide1").addEventListener("click", function(){
+        window.onload = function () {
+            document.querySelector("#banner .botao_slide1").addEventListener("click", function () {
                 document.querySelector("#banner .sliders").style = 'margin-left:0vw'
                 document.querySelector("#banner .botao_slide1").className = 'botao_slide botao_slide1 active'
                 document.querySelector("#banner .botao_slide2").className = 'botao_slide botao_slide2'
                 document.querySelector("#banner .botao_slide3").className = 'botao_slide botao_slide3'
 
             });
-            document.querySelector("#banner .botao_slide2").addEventListener("click", function(){
+            document.querySelector("#banner .botao_slide2").addEventListener("click", function () {
                 document.querySelector("#banner .sliders").style = 'margin-left:-100vw'
                 document.querySelector("#banner .botao_slide1").className = 'botao_slide botao_slide1'
                 document.querySelector("#banner .botao_slide2").className = 'botao_slide botao_slide2  active'
                 document.querySelector("#banner .botao_slide3").className = 'botao_slide botao_slide3'
 
             });
-            document.querySelector("#banner .botao_slide3").addEventListener("click", function(){
+            document.querySelector("#banner .botao_slide3").addEventListener("click", function () {
                 document.querySelector("#banner .sliders").style = 'margin-left:-200vw'
                 document.querySelector("#banner .botao_slide1").className = 'botao_slide botao_slide1'
                 document.querySelector("#banner .botao_slide2").className = 'botao_slide botao_slide2'
@@ -35,20 +37,20 @@
 
 
 
-               
-            document.querySelector("#happyclients .botao_slide1").addEventListener("click", function(){
+
+            document.querySelector("#happyclients .botao_slide1").addEventListener("click", function () {
                 document.querySelector("#happyclients .sliders2").style = 'margin-left:0vw'
                 document.querySelector("#happyclients .botao_slide1").className = 'botao_slide botao_slide1  active'
                 document.querySelector("#happyclients .botao_slide2").className = 'botao_slide botao_slide2'
                 document.querySelector("#happyclients .botao_slide3").className = 'botao_slide botao_slide3'
             });
-            document.querySelector("#happyclients .botao_slide2").addEventListener("click", function(){
+            document.querySelector("#happyclients .botao_slide2").addEventListener("click", function () {
                 document.querySelector("#happyclients .sliders2").style = 'margin-left:-100vw'
                 document.querySelector("#happyclients .botao_slide1").className = 'botao_slide botao_slide1'
                 document.querySelector("#happyclients .botao_slide2").className = 'botao_slide botao_slide2 active'
                 document.querySelector("#happyclients .botao_slide3").className = 'botao_slide botao_slide3'
             });
-            document.querySelector("#happyclients .botao_slide3").addEventListener("click", function(){
+            document.querySelector("#happyclients .botao_slide3").addEventListener("click", function () {
                 document.querySelector("#happyclients .sliders2").style = 'margin-left:-200vw'
                 document.querySelector("#happyclients .botao_slide1").className = 'botao_slide botao_slide1'
                 document.querySelector("#happyclients .botao_slide2").className = 'botao_slide botao_slide2'
@@ -58,8 +60,8 @@
 
 
 
-            document.querySelector(".for_our_team .botao_slide1").addEventListener("click", function(){
-                document.querySelector(".conteudo_our_team").style = 'margin-left: 100vw'
+            document.querySelector(".for_our_team .botao_slide1").addEventListener("click", function () {
+                document.querySelector(".conteudo_our_team").className = 'conteudo_our_team flex acenter op1select'
                 document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1  active'
                 document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2'
                 document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3'
@@ -67,8 +69,8 @@
                 document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter'
                 document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter'
             });
-            document.querySelector(".for_our_team .botao_slide2").addEventListener("click", function(){
-                document.querySelector(".conteudo_our_team").style = 'margin-left: 0vw'
+            document.querySelector(".for_our_team .botao_slide2").addEventListener("click", function () {
+                document.querySelector(".conteudo_our_team").className = 'conteudo_our_team flex acenter op2select'
                 document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1'
                 document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2 active'
                 document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3'
@@ -76,8 +78,8 @@
                 document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter selected'
                 document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter'
             });
-            document.querySelector(".for_our_team .botao_slide3").addEventListener("click", function(){
-                document.querySelector(".conteudo_our_team").style = 'margin-left: -100vw'
+            document.querySelector(".for_our_team .botao_slide3").addEventListener("click", function () {
+                document.querySelector(".conteudo_our_team").className = 'conteudo_our_team flex acenter op3select'
                 document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1'
                 document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2'
                 document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3 active'
@@ -87,8 +89,8 @@
             });
 
 
-            document.querySelector("#our_team .team01").addEventListener("click", function(){
-                document.querySelector(".conteudo_our_team").style = 'margin-left: 100vw'
+            document.querySelector("#our_team .team01").addEventListener("click", function () {
+                document.querySelector(".conteudo_our_team").className = 'conteudo_our_team flex acenter op1select'
                 document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1  active'
                 document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2'
                 document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3'
@@ -96,8 +98,8 @@
                 document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter'
                 document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter'
             });
-            document.querySelector("#our_team .team02").addEventListener("click", function(){
-                document.querySelector(".conteudo_our_team").style = 'margin-left: 0vw'
+            document.querySelector("#our_team .team02").addEventListener("click", function () {
+                document.querySelector(".conteudo_our_team").className = 'conteudo_our_team flex acenter op2select'
                 document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1'
                 document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2 active'
                 document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3'
@@ -105,8 +107,8 @@
                 document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter selected'
                 document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter'
             });
-            document.querySelector("#our_team .team03").addEventListener("click", function(){
-                document.querySelector(".conteudo_our_team").style = 'margin-left: -100vw'
+            document.querySelector("#our_team .team03").addEventListener("click", function () {
+                document.querySelector(".conteudo_our_team").className = 'conteudo_our_team flex acenter op3select'
                 document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1'
                 document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2'
                 document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3 active'
@@ -114,51 +116,34 @@
                 document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter'
                 document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter selected'
             });
-        
-
-            
-
-           
 
 
+            document.querySelector(".menuMobile").addEventListener("click", function () {
+                if (document.querySelector("header nav").className == 'menu_oculto') {
+                    document.querySelector("header nav").className = 'menu_show';
+                    document.querySelector(".menuMobile").className = 'menuMobile x';
+                    document.querySelector(".menuMobile .mm_line1").className = 'mm_line mm_line1 x';
+                    document.querySelector(".menuMobile .mm_line2").className = 'mm_line mm_line2 x';
+                    document.querySelector(".menuMobile .mm_line3").className = 'mm_line mm_line3 x';
 
-            
-            
+                } else {
+                    document.querySelector("header nav").className = 'menu_oculto';
+                    document.querySelector(".menuMobile").className = 'menuMobile';
+                    document.querySelector(".menuMobile .mm_line1").className = 'mm_line mm_line1';
+                    document.querySelector(".menuMobile .mm_line2").className = 'mm_line mm_line2';
+                    document.querySelector(".menuMobile .mm_line3").className = 'mm_line mm_line3';
+                }
+            });
 
-
-            
-
-
-
-
-
-
-                document.querySelector(".menuMobile").addEventListener("click", function(){
-                    if(document.querySelector("header nav").className == 'menu_oculto') {
-                        document.querySelector("header nav").className = 'menu_show';
-                        document.querySelector(".menuMobile").className = 'menuMobile x';
-                        document.querySelector(".menuMobile .mm_line1").className = 'mm_line mm_line1 x';
-                        document.querySelector(".menuMobile .mm_line2").className = 'mm_line mm_line2 x';
-                        document.querySelector(".menuMobile .mm_line3").className = 'mm_line mm_line3 x';
-
-                    } else {
-                        document.querySelector("header nav").className = 'menu_oculto';
-                        document.querySelector(".menuMobile").className = 'menuMobile';
-                        document.querySelector(".menuMobile .mm_line1").className = 'mm_line mm_line1';
-                        document.querySelector(".menuMobile .mm_line2").className = 'mm_line mm_line2';
-                        document.querySelector(".menuMobile .mm_line3").className = 'mm_line mm_line3';
-                    }
-                });
-        
 
         }
     </script>
-    
+
 </head>
 <header class="flex center">
     <div class="container flex">
         <div class="logo">
-            <img src="assets/img/logo.png" alt="logotipo do site"/>
+            <img src="assets/img/logo.png" alt="logotipo do site" />
         </div>
         <div class="menuMobile">
             <div class="mm_line mm_line1"></div>
@@ -182,661 +167,685 @@
     </div>
 </header>
 <main>
-<section id="banner">
-    <div class="sliders">
-        <div class="slide slide01">
-            <div class="color_banner flex center">
-                <div class="container flex center twhite column">
-                    <h1>design in about<br><span>communication</span></h1>
-                    <h2>+351 963 709 688</h2>
-                    <a class="abotao" href="">GET IN TOUCH!</a>
-                </div>
-            </div>
-        </div>
-        <div class="slide slide02">
-            <div class="color_banner flex center">
-                <div class="container flex center twhite column">
-                    <h1>slide 2 ok<br><span>communication</span></h1>
-                    <h2>+351 963 709 688</h2>
-                    <a class="abotao" href="">slide 2</a>
-                </div>
-            </div>
-        </div>
-        <div class="slide slide03">
-            <div class="color_banner flex center">
-                <div class="container flex center twhite column">
-                    <h1>slide 3 hahahahah<br><span>communication</span></h1>
-                    <h2>+351 963 709 688</h2>
-                    <a class="abotao" href="">welcome to slide 3</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="widget_botao flex center">
-        <div class="container b_slider flex center">
-            <div class="botao_slide botao_slide1 active"></div>
-            <div class="botao_slide botao_slide2"></div>
-            <div class="botao_slide botao_slide3"></div>
-        </div>
-    </div>
-</section>
-<section id="about" class="flex center">
-    <div class="container flex column acenter">
-        <div class="widget_titulo_section">
-            <h2>about us</h2>
-            <h3>who we are</h3>
-        </div>
-        <div class="conteudo_about flex center">
-            <div class="text_about flex column center">
-                <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pellentesque. Prasent fermentum neque ac tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Funce sed purus eros. Vivamus rhocus, ipsum in tempus fermentum, orci lo facilisis purus. Nam porta erat id sapien consectetur. Fusce sed purus eros. Vivamos rhoncus, ipsum in tempus fermentum, orci leo falisis purus.</p>
-                <a class="abotao" href="#">lear more</a>
-            </div>
-            <div class="video_about flex center acenter">
-                <img src="assets/img/video_about.jpg"/>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="service" class="flex center">
-    <div class="container flex column acenter">
-        <div class="widget_titulo_section">
-            <h2 class="twhite">Service</h2>
-            <h3>services that we provide</h3>
-        </div>
-        <div class="conteudo_services wrap flex">
-            <div class="divider flex wrap">
-                <div class="services first flex column acenter">
-                    <img src="icones/medalha.png" />
-                    <div class="widget_conteudo_section">
-                        <h4 class="twhite">high quality design</h4>
-                        <h5>Praesent metus urna, feugiata placerat elementum</h5>
-                    </div>
-                </div>
-                <div class="services flex column acenter">
-                    <img src="icones/estrela.png" />
-                    <div class="widget_conteudo_section">
-                        <h4 class="twhite">modern design</h4>
-                        <h5>Praesent metus urna, feugiata placerat elementum</h5>
+    <section id="banner">
+        <div class="sliders">
+            <div class="slide slide01">
+                <div class="color_banner flex center">
+                    <div class="container flex center twhite column">
+                        <h1>design in about<br><span>communication</span></h1>
+                        <h2>+351 963 709 688</h2>
+                        <a class="abotao" href="">GET IN TOUCH!</a>
                     </div>
                 </div>
             </div>
-            <div class="divider flex wrap">
-                <div class="services flex column acenter">
-                    <img src="icones/relogio.png" />
-                    <div class="widget_conteudo_section">
-                        <h4 class="twhite">regular updates</h4>
-                        <h5>Praesent metus urna, feugiata placerat elementum</h5>
+            <div class="slide slide02">
+                <div class="color_banner flex center">
+                    <div class="container flex center twhite column">
+                        <h1>slide 2 ok<br><span>communication</span></h1>
+                        <h2>+351 963 709 688</h2>
+                        <a class="abotao" href="">slide 2</a>
                     </div>
                 </div>
-                <div class="services flex column acenter">
-                    <img src="icones/balao.png" />
+            </div>
+            <div class="slide slide03">
+                <div class="color_banner flex center">
+                    <div class="container flex center twhite column">
+                        <h1>slide 3 hahahahah<br><span>communication</span></h1>
+                        <h2>+351 963 709 688</h2>
+                        <a class="abotao" href="">welcome to slide 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="widget_botao flex center">
+            <div class="container b_slider flex center">
+                <div class="botao_slide botao_slide1 active"></div>
+                <div class="botao_slide botao_slide2"></div>
+                <div class="botao_slide botao_slide3"></div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="flex center">
+        <div class="container flex column acenter">
+            <div class="widget_titulo_section">
+                <h2>about us</h2>
+                <h3>who we are</h3>
+            </div>
+            <div class="conteudo_about flex center">
+                <div class="text_about flex column center">
+                    <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla
+                        at facilisis est, vel condimentum ligula. Mauris vitar risus sed pellentesque. Prasent fermentum
+                        neque ac tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Funce sed
+                        purus eros. Vivamus rhocus, ipsum in tempus fermentum, orci lo facilisis purus. Nam porta erat
+                        id sapien consectetur. Fusce sed purus eros. Vivamos rhoncus, ipsum in tempus fermentum, orci
+                        leo falisis purus.</p>
+                    <a class="abotao" href="#">lear more</a>
+                </div>
+                <div class="video_about flex center acenter">
+                    <img src="assets/img/video_about.jpg" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service" class="flex center">
+        <div class="container flex column acenter">
+            <div class="widget_titulo_section">
+                <h2 class="twhite">Service</h2>
+                <h3>services that we provide</h3>
+            </div>
+            <div class="conteudo_services wrap flex">
+                <div class="divider flex wrap">
+                    <div class="services first flex column acenter">
+                        <img src="icones/medalha.png" />
+                        <div class="widget_conteudo_section">
+                            <h4 class="twhite">high quality design</h4>
+                            <h5>Praesent metus urna, feugiata placerat elementum</h5>
+                        </div>
+                    </div>
+                    <div class="services flex column acenter">
+                        <img src="icones/estrela.png" />
+                        <div class="widget_conteudo_section">
+                            <h4 class="twhite">modern design</h4>
+                            <h5>Praesent metus urna, feugiata placerat elementum</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider flex wrap">
+                    <div class="services flex column acenter">
+                        <img src="icones/relogio.png" />
+                        <div class="widget_conteudo_section">
+                            <h4 class="twhite">regular updates</h4>
+                            <h5>Praesent metus urna, feugiata placerat elementum</h5>
+                        </div>
+                    </div>
+                    <div class="services flex column acenter">
+                        <img src="icones/balao.png" />
+                        <div class="widget_conteudo_section">
+                            <h4 class="twhite">fast and free suporte</h4>
+                            <h5>Praesent metus urna, feugiata</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="our_projects" class="flex center">
+        <div class="container flex column acenter">
+
+            <div class="widget_titulo_section">
+                <h2>our projects</h2>
+                <h3>what we crate</h3>
+            </div>
+            <div class="projects_menu">
+                <ul class="wrap center">
+                    <li><a class="active" href="#">all</a></li>
+                    <li><a href="#">photos</a></li>
+                    <li><a href="#">branding</a></li>
+                    <li><a href="#">adverts</a></li>
+                    <li><a href="#">developement</a></li>
+                    <li><a href="#">misc</a></li>
+                </ul>
+            </div>
+            <div class="projects_galeria flex center">
+                <div class="projects_photo photo1">
                     <div class="widget_conteudo_section">
                         <h4 class="twhite">fast and free suporte</h4>
                         <h5>Praesent metus urna, feugiata</h5>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div class="projects_photo photo2">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
+                <div class="projects_photo photo3">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
+                <div class="projects_photo photo4">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
+                <div class="projects_photo photo5">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
+                <div class="projects_photo photo6">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
+                <div class="projects_photo photo7">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
+                <div class="projects_photo photo8">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
+                <div class="projects_photo photo9">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
+                <div class="projects_photo photo10">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
+                <div class="projects_photo photo11">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
+                <div class="projects_photo photo12">
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
+                </div>
 
-    </div>
-</section>
-<section id="our_projects" class="flex center">
-    <div class="container flex column acenter">
+            </div>
+            <a class="abotao" href="#">more projects</a>
+        </div>
+    </section>
+    <section id="our_team" class="">
+        <div class="container paddingsection flex column acenter center">
+            <div class="widget_titulo_section">
+                <h2 class="twhite">our team</h2>
+                <h3>our co-workers</h3>
+            </div>
+            <div class="conteudo_our_team flex acenter">
+                <div class="team team01 flex column center acenter">
+                    <img class="photo" src="complementos/mulher1.png" />
+                    <div class="widget_titulo_section">
+                        <h2>jane doe</h2>
+                        <h3>Master mind</h3>
+                    </div>
+                    <div class="social flex">
+                        <div class="icon_social">
+                            <img src="icones/twitter.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/facebook.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/googleplus.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/linkedin.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/pinterest.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/arroba.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="team team02 flex column center acenter selected">
+                    <img class="photo" src="complementos/homem1.png" />
+                    <div class="widget_titulo_section">
+                        <h2>mike shiller</h2>
+                        <h3>Criative head</h3>
+                    </div>
+                    <div class="social flex">
+                        <div class="icon_social">
+                            <img src="icones/twitter.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/facebook.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/googleplus.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/linkedin.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/pinterest.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/arroba.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="team team03 flex column center acenter">
+                    <img class="photo" src="complementos/mulher2.png" />
+                    <div class="widget_titulo_section">
+                        <h2>anna johns</h2>
+                        <h3>Technical lead</h3>
+                    </div>
+                    <div class="social flex">
+                        <div class="icon_social">
+                            <img src="icones/twitter.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/facebook.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/googleplus.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/linkedin.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/pinterest.png" />
+                        </div>
+                        <div class="icon_social">
+                            <img src="icones/arroba.png" />
+                        </div>
+                    </div>
+                </div>
 
-        <div class="widget_titulo_section">
-            <h2>our projects</h2>
-            <h3>what we crate</h3>
-        </div>
-        <div class="projects_menu">
-            <ul class="wrap center">
-                <li><a class="active" href="#">all</a></li>
-                <li><a href="#">photos</a></li>
-                <li><a href="#">branding</a></li>
-                <li><a href="#">adverts</a></li>
-                <li><a href="#">developement</a></li>
-                <li><a href="#">misc</a></li>
-            </ul>
-        </div>
-        <div class="projects_galeria flex center">
-            <div class="projects_photo photo1">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo2">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo3">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo4">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo5">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo6">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo7">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo8">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo9">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo10">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo11">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-            <div class="projects_photo photo12">
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
-                </div>
-            </div>
-
-        </div>
-    <a class="abotao" href="#">more projects</a>
-    </div>
-</section>
-<section id="our_team" class="">
-    <div class="container paddingsection flex column acenter center">
-        <div class="widget_titulo_section">
-            <h2 class="twhite">our team</h2>
-            <h3>our co-workers</h3>
-        </div>
-        <div class="conteudo_our_team flex acenter">
-            <div class="team team01 flex column center acenter">
-                <img class="photo" src="complementos/mulher1.png" />
-                <div class="widget_titulo_section">
-                    <h2>jane doe</h2>
-                    <h3>Master mind</h3>
-                </div>
-                <div class="social flex">
-                    <div class="icon_social">
-                        <img src="icones/twitter.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/facebook.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/googleplus.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/linkedin.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/pinterest.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/arroba.png"/>
-                    </div>
-                </div>
-            </div>
-            <div class="team team02 flex column center acenter selected">
-                <img class="photo" src="complementos/homem1.png" />
-                <div class="widget_titulo_section">
-                    <h2>mike shiller</h2>
-                    <h3>Criative head</h3>
-                </div>
-                <div class="social flex">
-                    <div class="icon_social">
-                        <img src="icones/twitter.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/facebook.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/googleplus.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/linkedin.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/pinterest.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/arroba.png"/>
-                    </div>
-                </div>
-            </div>
-            <div class="team team03 flex column center acenter">
-                <img class="photo" src="complementos/mulher2.png" />
-                <div class="widget_titulo_section">
-                    <h2>anna johns</h2>
-                    <h3>Technical lead</h3>
-                </div>
-                <div class="social flex">
-                    <div class="icon_social">
-                        <img src="icones/twitter.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/facebook.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/googleplus.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/linkedin.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/pinterest.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/arroba.png"/>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<div class="widget_botao for_our_team flex center">
-    <div class="container b_slider flex center">
-        <div class="botao_slide botao_slide1"></div>
-        <div class="botao_slide botao_slide2 active"></div>
-        <div class="botao_slide botao_slide3"></div>
-    </div>
-</div>
-<section id="happyclients">
-    <div class="container flex column">
-        <div class="widget_titulo_section">
-            <h2>HAPPY CLIENTS</h2>
-            <h3>Clients reviews</h3>
-        </div>
-        <div class="sliders2 flex" style="margin-left: -100vw;">
-            <div class="slide slide01 column flex acenter">
-                <img class="client_perfil" src="complementos/homem2.png"/>
-                <div class="widget_titulo_section">
-                    <h2>mike shiller</h2>
-                    <h3>CEO enterprise</h3>
-                </div>
-                <img src="icones/quote.png" />
-                <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pellentesque. Prasent fermentum neque ac tellus gravida, at varius sem accumsan.</p>
-            </div>
-            <div class="slide slide02 column flex acenter">
-                <img class="client_perfil" src="complementos/mulher1.png"/>
-                <div class="widget_titulo_section">
-                    <h2>adila santos</h2>
-                    <h3>Criative head</h3>
-                </div>
-                <img src="icones/quote.png" />
-                <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pell</p>
-            </div>
-            <div class="slide slide03 column flex acenter">
-                <img class="client_perfil" src="complementos/mulher2.png"/>
-                <div class="widget_titulo_section">
-                    <h2>mirian hosth</h2>
-                    <h3>Chef of design</h3>
-                </div>
-                <img src="icones/quote.png" />
-                <p>Mauris vitar risus sed pellentesque. Prasent fermentum neque ac tellus gravida, at varius sem accumsan. Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla at facilisis est, vel condimentum ligula. </p>
             </div>
         </div>
-    </div>
-    <div class="widget_botao flex center">
+    </section>
+    <div class="widget_botao for_our_team flex center">
         <div class="container b_slider flex center">
             <div class="botao_slide botao_slide1"></div>
             <div class="botao_slide botao_slide2 active"></div>
             <div class="botao_slide botao_slide3"></div>
         </div>
     </div>
-</section>
-<section id="empresa" class="cont_style_2 flex center acenter">
-    <div class="container flex center">
-        <div class="logo_empresa">
-            <img src="complementos/empresa1.png"/>
-        </div>
-        <div class="logo_empresa">
-            <img src="complementos/empresa2.png"/>
-        </div>
-        <div class="logo_empresa">
-            <img src="complementos/empresa3.png"/>
-        </div>
-        <div class="logo_empresa">
-            <img src="complementos/empresa4.png"/>
-        </div>
-        <div class="logo_empresa">
-            <img src="complementos/empresa5.png"/>
-        </div>
-        <div class="logo_empresa">
-            <img src="complementos/empresa6.png"/>
-        </div>
-    </div>
-</section>
-<section id="price" class="flex center">
-    <div class="container flex column acenter">
-        <div class="widget_titulo_section">
-            <h2>price</h2>
-            <h3>pricing table</h3>
-        </div>
-        <div class="conteudo_price flex">
-            <div class="pack_price flex column">
-                <h3>express</h3>
-                <h2>$ 9.99</h2>
-                <h4>/ MONTH</h4>
-                <p>tracking issues</p>
-                <div></div>
-                <p>add bugs through email</p>
-                <div></div>
-                <p>notifications</p>
-                <div></div>
-                <p>time tracking</p>
-                <div></div>
-                <p>custom views</p>
-                <a class="abotao" href="#">CHOOSE</a>
+    <section id="happyclients">
+        <div class="container flex column">
+            <div class="widget_titulo_section">
+                <h2>HAPPY CLIENTS</h2>
+                <h3>Clients reviews</h3>
             </div>
-            <div class="pack_price flex column">
-                <h3>standart</h3>
-                <h2>$ 14.99</h2>
-                <h4>/ MONTH</h4>
-                <p>tracking issues</p>
-                <div></div>
-                <p>add bugs through email</p>
-                <div></div>
-                <p>notifications</p>
-                <div></div>
-                <p>time tracking</p>
-                <div></div>
-                <p>custom views</p>
-                <a class="abotao" href="#">CHOOSE</a>
-            </div>
-            <div class="pack_price flex column">
-                <h3>luxe</h3>
-                <h2>$ 19.99</h2>
-                <h4>/ MONTH</h4>
-                <p>tracking issues</p>
-                <div></div>
-                <p>add bugs through email</p>
-                <div></div>
-                <p>notifications</p>
-                <div></div>
-                <p>time tracking</p>
-                <div></div>
-                <p>custom views</p>
-                <a class="abotao" href="#">CHOOSE</a>
-            </div>
-            <div class="pack_price flex column">
-                <h3>premium</h3>
-                <h2>$ 24.99</h2>
-                <h4>/ MONTH</h4>
-                <p>tracking issues</p>
-                <div></div>
-                <p>add bugs through email</p>
-                <div></div>
-                <p>notifications</p>
-                <div></div>
-                <p>time tracking</p>
-                <div></div>
-                <p>custom views</p>
-                <a class="abotao" href="#">CHOOSE</a>
+            <div class="sliders2 flex" style="margin-left: -100vw;">
+                <div class="slide slide01 column flex acenter">
+                    <img class="client_perfil" src="complementos/homem2.png" />
+                    <div class="widget_titulo_section">
+                        <h2>mike shiller</h2>
+                        <h3>CEO enterprise</h3>
+                    </div>
+                    <img src="icones/quote.png" />
+                    <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla
+                        at facilisis est, vel condimentum ligula. Mauris vitar risus sed pellentesque. Prasent fermentum
+                        neque ac tellus gravida, at varius sem accumsan.</p>
+                </div>
+                <div class="slide slide02 column flex acenter">
+                    <img class="client_perfil" src="complementos/mulher1.png" />
+                    <div class="widget_titulo_section">
+                        <h2>adila santos</h2>
+                        <h3>Criative head</h3>
+                    </div>
+                    <img src="icones/quote.png" />
+                    <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla
+                        at facilisis est, vel condimentum ligula. Mauris vitar risus sed pell</p>
+                </div>
+                <div class="slide slide03 column flex acenter">
+                    <img class="client_perfil" src="complementos/mulher2.png" />
+                    <div class="widget_titulo_section">
+                        <h2>mirian hosth</h2>
+                        <h3>Chef of design</h3>
+                    </div>
+                    <img src="icones/quote.png" />
+                    <p>Mauris vitar risus sed pellentesque. Prasent fermentum neque ac tellus gravida, at varius sem
+                        accumsan. Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum
+                        upsum. nulla at facilisis est, vel condimentum ligula. </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section id="premium" class="flex center">
-    <div class="container flex column acenter">
-        <div class="widget_titulo_section">
-            <h2>premium</h2>
-            <h3>even more features available</h3>
-        </div>
-        <div class="conteudo_premium wrap flex center acenter">
-            <div class="premium_image flex center acenter">
-                <img src="complementos/livros.png" />
+        <div class="widget_botao flex center">
+            <div class="container b_slider flex center">
+                <div class="botao_slide botao_slide1"></div>
+                <div class="botao_slide botao_slide2 active"></div>
+                <div class="botao_slide botao_slide3"></div>
             </div>
-            <div class="conteudo_img flex column acenter">
-                <div class="row_premium flex">
-                    <img src="icones/check.png" />
-                    <div class="feature">
-                        <h1>first feature</h1>
-                        <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pell</p>
+        </div>
+    </section>
+    <section id="empresa" class="cont_style_2 flex center acenter">
+        <div class="container flex center">
+            <div class="logo_empresa">
+                <img src="complementos/empresa1.png" />
+            </div>
+            <div class="logo_empresa">
+                <img src="complementos/empresa2.png" />
+            </div>
+            <div class="logo_empresa">
+                <img src="complementos/empresa3.png" />
+            </div>
+            <div class="logo_empresa">
+                <img src="complementos/empresa4.png" />
+            </div>
+            <div class="logo_empresa">
+                <img src="complementos/empresa5.png" />
+            </div>
+            <div class="logo_empresa">
+                <img src="complementos/empresa6.png" />
+            </div>
+        </div>
+    </section>
+    <section id="price" class="flex center">
+        <div class="container flex column acenter">
+            <div class="widget_titulo_section">
+                <h2>price</h2>
+                <h3>pricing table</h3>
+            </div>
+            <div class="conteudo_price wrap flex">
+                <div class="divider flex1 wrap">
+                    <div class="pack_price flex column">
+                        <h3>express</h3>
+                        <h2>$ 9.99</h2>
+                        <h4>/ MONTH</h4>
+                        <p>tracking issues</p>
+                        <div></div>
+                        <p>add bugs through email</p>
+                        <div></div>
+                        <p>notifications</p>
+                        <div></div>
+                        <p>time tracking</p>
+                        <div></div>
+                        <p>custom views</p>
+                        <a class="abotao" href="#">CHOOSE</a>
+                    </div>
+                    <div class="pack_price flex column">
+                        <h3>standart</h3>
+                        <h2>$ 14.99</h2>
+                        <h4>/ MONTH</h4>
+                        <p>tracking issues</p>
+                        <div></div>
+                        <p>add bugs through email</p>
+                        <div></div>
+                        <p>notifications</p>
+                        <div></div>
+                        <p>time tracking</p>
+                        <div></div>
+                        <p>custom views</p>
+                        <a class="abotao" href="#">CHOOSE</a>
                     </div>
                 </div>
-                <div class="row_premium flex">
-                    <img src="icones/check.png" />
-                    <div class="feature">
-                        <h1>first feature</h1>
-                        <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pell</p>
+                <div class="divider flex1 wrap">
+                    <div class="pack_price flex column">
+                        <h3>luxe</h3>
+                        <h2>$ 19.99</h2>
+                        <h4>/ MONTH</h4>
+                        <p>tracking issues</p>
+                        <div></div>
+                        <p>add bugs through email</p>
+                        <div></div>
+                        <p>notifications</p>
+                        <div></div>
+                        <p>time tracking</p>
+                        <div></div>
+                        <p>custom views</p>
+                        <a class="abotao" href="#">CHOOSE</a>
+                    </div>
+                    <div class="pack_price flex column">
+                        <h3>premium</h3>
+                        <h2>$ 24.99</h2>
+                        <h4>/ MONTH</h4>
+                        <p>tracking issues</p>
+                        <div></div>
+                        <p>add bugs through email</p>
+                        <div></div>
+                        <p>notifications</p>
+                        <div></div>
+                        <p>time tracking</p>
+                        <div></div>
+                        <p>custom views</p>
+                        <a class="abotao" href="#">CHOOSE</a>
                     </div>
                 </div>
-                <div class="row_premium flex">
-                    <img src="icones/check.png" />
-                    <div class="feature">
-                        <h1>first feature</h1>
-                        <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pell</p>
+
+            </div>
+        </div>
+    </section>
+    <section id="premium" class="flex center">
+        <div class="container flex column acenter">
+            <div class="widget_titulo_section">
+                <h2>premium</h2>
+                <h3>even more features available</h3>
+            </div>
+            <div class="conteudo_premium wrap flex center acenter">
+                <div class="premium_image flex center acenter">
+                    <img src="complementos/livros.png" />
+                </div>
+                <div class="conteudo_img flex column acenter">
+                    <div class="row_premium flex">
+                        <img src="icones/check.png" />
+                        <div class="feature">
+                            <h1>first feature</h1>
+                            <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum
+                                upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pell</p>
+                        </div>
+                    </div>
+                    <div class="row_premium flex">
+                        <img src="icones/check.png" />
+                        <div class="feature">
+                            <h1>first feature</h1>
+                            <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum
+                                upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pell</p>
+                        </div>
+                    </div>
+                    <div class="row_premium flex">
+                        <img src="icones/check.png" />
+                        <div class="feature">
+                            <h1>first feature</h1>
+                            <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum
+                                upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pell</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <a class="abotao">choose in touch</a>
         </div>
-        <a class="abotao">choose in touch</a>
-    </div>
-</section>
-<section id="somefacts" class="flex center">
-    <div class="container flex column acenter">
-        <div class="widget_titulo_section">
-            <h2 class="twhite">Some facts</h2>
-            <h3>about our work</h3>
-        </div>
-        <div class="conteudo_facts flex center">
-            <div class="facts flex column acenter">
-                <h1 class="tcolor">1000</h1>
-                <div class="divisoria"></div>
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">design projects released</h4>
-                    <h5>Praesent metus urna, feugiata placerat</h5>
-                </div>
+    </section>
+    <section id="somefacts" class="flex center">
+        <div class="container flex column acenter">
+            <div class="widget_titulo_section">
+                <h2 class="twhite">Some facts</h2>
+                <h3>about our work</h3>
             </div>
-            <div class="facts flex column acenter">
-                <h1 class="tcolor">900</h1>
-                <div class="divisoria"></div>
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">photos</h4>
-                    <h5>Praesent metus urna, feugiata placerat</h5>
+            <div class="conteudo_facts wrap flex center">
+                <div class="facts flex column acenter">
+                    <h1 class="tcolor">1000</h1>
+                    <div class="divisoria"></div>
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">design projects released</h4>
+                        <h5>Praesent metus urna, feugiata placerat</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="facts flex column acenter">
-                <h1 class="tcolor">500</h1>
-                <div class="divisoria"></div>
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">marketing idea</h4>
-                    <h5>Praesent metus urna, feugiata placerat</h5>
+                <div class="facts flex column acenter">
+                    <h1 class="tcolor">900</h1>
+                    <div class="divisoria"></div>
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">photos</h4>
+                        <h5>Praesent metus urna, feugiata placerat</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="facts flex column acenter">
-                <h1 class="tcolor">100</h1>
-                <div class="divisoria"></div>
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">exhibitions</h4>
-                    <h5>Praesent metus urna, feugiata placerat</h5>
+                <div class="facts flex column acenter">
+                    <h1 class="tcolor">500</h1>
+                    <div class="divisoria"></div>
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">marketing idea</h4>
+                        <h5>Praesent metus urna, feugiata placerat</h5>
+                    </div>
                 </div>
-            </div>
-            
-            
+                <div class="facts flex column acenter">
+                    <h1 class="tcolor">100</h1>
+                    <div class="divisoria"></div>
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">exhibitions</h4>
+                        <h5>Praesent metus urna, feugiata placerat</h5>
+                    </div>
+                </div>
 
 
-        </div>
 
-    </div>
-</section>
-<section id="socialshare" class="cont_style_2 flex center acenter">
-    <div class="container wrap flex center">
-        <div class="b_share_share flex acenter center">
-            <div class="share flex center acenter">
-                <img src="icones/share.png" alt="twitter">
-            </div>
-            <h3>tel about us:</h3>
-        </div>
-        <div class="div_share flex acenter">
-            <div class="b_share flex acenter">
-                <div class="icon_share flex center acenter twitter">
-                    <img src="icones/twitter.png" alt="twitter">
-                </div>
-                <h6>186</h6>
-            </div>
-            
-            <div class="b_share flex acenter">
-                <div class="icon_share flex center acenter linkedin">
-                    <img src="icones/linkedin.png" alt="twitter">
-                </div>
-                <h6>59</h6>
-            </div>
-            <div class="b_share flex acenter">
-                <div class="icon_share flex center acenter facebook">
-                    <img src="icones/facebook.png" alt="twitter">
-                </div>
-                <h6>894</h6>
-            </div>
-            <div class="b_share flex acenter">
-                <div class="icon_share flex center acenter googleplus">
-                    <img src="icones/googleplus.png" alt="twitter">
-                </div>
-                <h6>156</h6>
-            </div>
-            <div class="b_share flex acenter">
-                <div class="icon_share flex center acenter pinterest">
-                    <img src="icones/pinterest.png" alt="twitter">
-                </div>
-                <h6>48</h6>
-            </div>
-        </div>
 
-    </div>
-</section>
-<section id="form" class="paddingsection flex center acenter">
-    <div class="container column acenter flex center">
-        <div class="widget_titulo_section">
-            <h2>contact us</h2>
-            <h3>our agency locate in melbourne, australia</h3>
-        </div>
-        <form>
-            <div class="flex">
-                <input class="input50" type="text" name="nome" placeholder="name">
-                <input class="input50" type="email" name="email" placeholder="e-mail">
-            </div>
-            
-            <input class="input100" type="text" name="subject" placeholder="subject">
-            <textarea name="message" placeholder="message" >
-
-            </textarea>
-            <div class="flex center">
-                <input class="abotao" type="submit" name="enviar" value="SEND MESSAGE">
-            </div>
-
-        </form>
-
-    </div>
-</section>
-<section id="maps" class="flex center">
-    <div class="container column flex center">
-        <div class="share_maps flex column center">
-
-            <div class="b_share flex acenter">
-                <div class="icon_share flex center acenter twitter">
-                    <img src="icones/carta.png" alt="twitter">
-                </div>
-                <h6>PO Box 16122 Collins Street West Victoria 8007 Australia</h6>
-            </div>
-            <div class="b_share flex acenter">
-                <div class="icon_share flex center acenter twitter">
-                    <img src="icones/localizacao.png" alt="twitter">
-                </div>
-                <h6>121 King Screet, Melbourne Victoria 3000 Australia</h6>
-            </div>
-            <div class="b_share flex acenter">
-                <div class="icon_share flex center acenter twitter">
-                    <img src="icones/telefone.png" alt="twitter">
-                </div>
-                <h6>+351 963 709 688</h6>
-            </div>
-            <div class="b_share flex acenter">
-                <div class="icon_share flex center acenter twitter">
-                    <img src="icones/arroba.png" alt="twitter">
-                </div>
-                <h6>kvbn147@gmail.com</h6>
-            </div>
-            <div class="b_share flex acenter">
-                <div class="icon_share flex center acenter twitter">
-                    <img src="icones/web.png" alt="twitter">
-                </div>
-                <h6>github.com/victorhosth</h6>
             </div>
 
         </div>
-    </div>
-</section>
+    </section>
+    <section id="socialshare" class="cont_style_2 flex center acenter">
+        <div class="container wrap flex center">
+            <div class="b_share_share flex acenter center">
+                <div class="share flex center acenter">
+                    <img src="icones/share.png" alt="twitter">
+                </div>
+                <h3>tel about us:</h3>
+            </div>
+            <div class="div_share flex acenter">
+                <div class="b_share flex acenter">
+                    <div class="icon_share flex center acenter twitter">
+                        <img src="icones/twitter.png" alt="twitter">
+                    </div>
+                    <h6>186</h6>
+                </div>
+
+                <div class="b_share flex acenter">
+                    <div class="icon_share flex center acenter linkedin">
+                        <img src="icones/linkedin.png" alt="twitter">
+                    </div>
+                    <h6>59</h6>
+                </div>
+                <div class="b_share flex acenter">
+                    <div class="icon_share flex center acenter facebook">
+                        <img src="icones/facebook.png" alt="twitter">
+                    </div>
+                    <h6>894</h6>
+                </div>
+                <div class="b_share flex acenter">
+                    <div class="icon_share flex center acenter googleplus">
+                        <img src="icones/googleplus.png" alt="twitter">
+                    </div>
+                    <h6>156</h6>
+                </div>
+                <div class="b_share flex acenter">
+                    <div class="icon_share flex center acenter pinterest">
+                        <img src="icones/pinterest.png" alt="twitter">
+                    </div>
+                    <h6>48</h6>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="form" class="paddingsection flex center acenter">
+        <div class="container column acenter flex center">
+            <div class="widget_titulo_section">
+                <h2>contact us</h2>
+                <h3>our agency locate in melbourne, australia</h3>
+            </div>
+            <form>
+                <div class="flex wrap">
+                    <input class="input50" type="text" name="nome" placeholder="name">
+                    <input class="input50" type="email" name="email" placeholder="e-mail">
+                </div>
+
+                <input class="input100" type="text" name="subject" placeholder="subject">
+                <textarea name="message" placeholder="message">
+
+        </textarea>
+                <div class="flex center">
+                    <input class="abotao" type="submit" name="enviar" value="SEND MESSAGE">
+                </div>
+
+            </form>
+
+        </div>
+    </section>
+    <section id="maps" class="flex center">
+        <div class="container column flex center">
+            <div class="share_maps flex column center">
+
+                <div class="b_share flex acenter">
+                    <div class="icon_share flex center acenter twitter">
+                        <img src="icones/carta.png" alt="twitter">
+                    </div>
+                    <h6>PO Box 16122 Collins Street West Victoria 8007 Australia</h6>
+                </div>
+                <div class="b_share flex acenter">
+                    <div class="icon_share flex center acenter twitter">
+                        <img src="icones/localizacao.png" alt="twitter">
+                    </div>
+                    <h6>121 King Screet, Melbourne Victoria 3000 Australia</h6>
+                </div>
+                <div class="b_share flex acenter">
+                    <div class="icon_share flex center acenter twitter">
+                        <img src="icones/telefone.png" alt="twitter">
+                    </div>
+                    <h6>+351 963 709 688</h6>
+                </div>
+                <div class="b_share flex acenter">
+                    <div class="icon_share flex center acenter twitter">
+                        <img src="icones/arroba.png" alt="twitter">
+                    </div>
+                    <h6>kvbn147@gmail.com</h6>
+                </div>
+                <div class="b_share flex acenter">
+                    <div class="icon_share flex center acenter twitter">
+                        <img src="icones/web.png" alt="twitter">
+                    </div>
+                    <h6>github.com/victorhosth</h6>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="flex center acenter">
-        <div class="container acenter flex">
-            <div class="footer_area flex column footer1">
-                <div class="social flex">
-                    <div class="icon_social">
-                        <img src="icones/twitter.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/facebook.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/googleplus.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/linkedin.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/pinterest.png"/>
-                    </div>
-                    <div class="icon_social">
-                        <img src="icones/arroba.png"/>
-                    </div>
+    <div class="container acenter wrap flex">
+        <div class="footer_area flex column footer1">
+            <div class="social flex">
+                <div class="icon_social">
+                    <img src="icones/twitter.png" />
                 </div>
-                <h2>AWAX<BR>FEITO POR <a href="https://github.com/victorhosth">VICTOR HOSTH</a></h2>
+                <div class="icon_social">
+                    <img src="icones/facebook.png" />
+                </div>
+                <div class="icon_social">
+                    <img src="icones/googleplus.png" />
+                </div>
+                <div class="icon_social">
+                    <img src="icones/linkedin.png" />
+                </div>
+                <div class="icon_social">
+                    <img src="icones/pinterest.png" />
+                </div>
+                <div class="icon_social">
+                    <img src="icones/arroba.png" />
+                </div>
             </div>
-            <div class="footer_area footer2">
-                <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pellentesque. Prasent fermentum neque ac tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Funce sed purus eros. Vivamus rhocus, ipsum in tempus fermentum, orci lo facilisis purus. Nam porta erat id sapien consectetur. Fusce sed purus eros. Vivamos rhoncus, ipsum in tempus fermentum, orci leo falisis purus.</p>
-            </div>
-            <div class="footer_area flex column center acenter footer3">
-                <form class="flex column center acenter">
-                    <input type="email" name="emailmkt" placeholder="EMAIL TO SUBSCRIBE">
-                    <input   type="submit" name="sumitmkt" value="subscribe">
-                </form>
-            </div>
-    
+            <h2>AWAX<BR>FEITO POR <a href="https://github.com/victorhosth">VICTOR HOSTH</a></h2>
         </div>
-    
+        <div class="footer_area footer2">
+            <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla at
+                facilisis est, vel condimentum ligula. Mauris vitar risus sed pellentesque. Prasent fermentum neque ac
+                tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Funce sed purus eros.
+                Vivamus rhocus, ipsum in tempus fermentum, orci lo facilisis purus. Nam porta erat id sapien
+                consectetur. Fusce sed purus eros. Vivamos rhoncus, ipsum in tempus fermentum, orci leo falisis purus.
+            </p>
+        </div>
+        <div class="footer_area flex column center acenter footer3">
+            <form class="flex column center acenter">
+                <input type="email" name="emailmkt" placeholder="EMAIL TO SUBSCRIBE">
+                <input type="submit" name="sumitmkt" value="subscribe">
+            </form>
+        </div>
+
+    </div>
+
 </footer>
+
 </html>

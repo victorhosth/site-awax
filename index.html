@@ -56,6 +56,101 @@
             });
 
 
+
+
+            document.querySelector(".for_our_team .botao_slide1").addEventListener("click", function(){
+                document.querySelector(".conteudo_our_team").style = 'margin-left: 100vw'
+                document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1  active'
+                document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2'
+                document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3'
+                document.querySelector("#our_team .team01").className = 'team team01 flex column center acenter selected'
+                document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter'
+                document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter'
+            });
+            document.querySelector(".for_our_team .botao_slide2").addEventListener("click", function(){
+                document.querySelector(".conteudo_our_team").style = 'margin-left: 0vw'
+                document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1'
+                document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2 active'
+                document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3'
+                document.querySelector("#our_team .team01").className = 'team team01 flex column center acenter'
+                document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter selected'
+                document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter'
+            });
+            document.querySelector(".for_our_team .botao_slide3").addEventListener("click", function(){
+                document.querySelector(".conteudo_our_team").style = 'margin-left: -100vw'
+                document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1'
+                document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2'
+                document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3 active'
+                document.querySelector("#our_team .team01").className = 'team team01 flex column center acenter'
+                document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter'
+                document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter selected'
+            });
+
+
+            document.querySelector("#our_team .team01").addEventListener("click", function(){
+                document.querySelector(".conteudo_our_team").style = 'margin-left: 100vw'
+                document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1  active'
+                document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2'
+                document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3'
+                document.querySelector("#our_team .team01").className = 'team team01 flex column center acenter selected'
+                document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter'
+                document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter'
+            });
+            document.querySelector("#our_team .team02").addEventListener("click", function(){
+                document.querySelector(".conteudo_our_team").style = 'margin-left: 0vw'
+                document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1'
+                document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2 active'
+                document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3'
+                document.querySelector("#our_team .team01").className = 'team team01 flex column center acenter'
+                document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter selected'
+                document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter'
+            });
+            document.querySelector("#our_team .team03").addEventListener("click", function(){
+                document.querySelector(".conteudo_our_team").style = 'margin-left: -100vw'
+                document.querySelector(".for_our_team .botao_slide1").className = 'botao_slide botao_slide1'
+                document.querySelector(".for_our_team .botao_slide2").className = 'botao_slide botao_slide2'
+                document.querySelector(".for_our_team .botao_slide3").className = 'botao_slide botao_slide3 active'
+                document.querySelector("#our_team .team01").className = 'team team01 flex column center acenter'
+                document.querySelector("#our_team .team02").className = 'team team02 flex column center acenter'
+                document.querySelector("#our_team .team03").className = 'team team03 flex column center acenter selected'
+            });
+        
+
+            
+
+           
+
+
+
+            
+            
+
+
+            
+
+
+
+
+
+
+                document.querySelector(".menuMobile").addEventListener("click", function(){
+                    if(document.querySelector("header nav").className == 'menu_oculto') {
+                        document.querySelector("header nav").className = 'menu_show';
+                        document.querySelector(".menuMobile").className = 'menuMobile x';
+                        document.querySelector(".menuMobile .mm_line1").className = 'mm_line mm_line1 x';
+                        document.querySelector(".menuMobile .mm_line2").className = 'mm_line mm_line2 x';
+                        document.querySelector(".menuMobile .mm_line3").className = 'mm_line mm_line3 x';
+
+                    } else {
+                        document.querySelector("header nav").className = 'menu_oculto';
+                        document.querySelector(".menuMobile").className = 'menuMobile';
+                        document.querySelector(".menuMobile .mm_line1").className = 'mm_line mm_line1';
+                        document.querySelector(".menuMobile .mm_line2").className = 'mm_line mm_line2';
+                        document.querySelector(".menuMobile .mm_line3").className = 'mm_line mm_line3';
+                    }
+                });
+        
+
         }
     </script>
     
@@ -65,7 +160,12 @@
         <div class="logo">
             <img src="assets/img/logo.png" alt="logotipo do site"/>
         </div>
-        <nav>
+        <div class="menuMobile">
+            <div class="mm_line mm_line1"></div>
+            <div class="mm_line mm_line2"></div>
+            <div class="mm_line mm_line3"></div>
+        </div>
+        <nav class="menu_oculto">
             <ul>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About us</a></li>
@@ -127,11 +227,11 @@
             <h3>who we are</h3>
         </div>
         <div class="conteudo_about flex center">
-            <div class="text_about flex column">
+            <div class="text_about flex column center">
                 <p>Prasent metus urna, feugiar a placerat vel, elementum at leo. Quisque vel fermentum upsum. nulla at facilisis est, vel condimentum ligula. Mauris vitar risus sed pellentesque. Prasent fermentum neque ac tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Funce sed purus eros. Vivamus rhocus, ipsum in tempus fermentum, orci lo facilisis purus. Nam porta erat id sapien consectetur. Fusce sed purus eros. Vivamos rhoncus, ipsum in tempus fermentum, orci leo falisis purus.</p>
                 <a class="abotao" href="#">lear more</a>
             </div>
-            <div class="video_about">
+            <div class="video_about flex center acenter">
                 <img src="assets/img/video_about.jpg"/>
             </div>
         </div>
@@ -143,33 +243,37 @@
             <h2 class="twhite">Service</h2>
             <h3>services that we provide</h3>
         </div>
-        <div class="conteudo_services flex">
-            <div class="services flex column acenter">
-                <img src="icones/medalha.png" />
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">high quality design</h4>
-                    <h5>Praesent metus urna, feugiata placerat elementum</h5>
+        <div class="conteudo_services wrap flex">
+            <div class="divider flex wrap">
+                <div class="services first flex column acenter">
+                    <img src="icones/medalha.png" />
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">high quality design</h4>
+                        <h5>Praesent metus urna, feugiata placerat elementum</h5>
+                    </div>
+                </div>
+                <div class="services flex column acenter">
+                    <img src="icones/estrela.png" />
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">modern design</h4>
+                        <h5>Praesent metus urna, feugiata placerat elementum</h5>
+                    </div>
                 </div>
             </div>
-            <div class="services flex column acenter">
-                <img src="icones/estrela.png" />
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">modern design</h4>
-                    <h5>Praesent metus urna, feugiata placerat elementum</h5>
+            <div class="divider flex wrap">
+                <div class="services flex column acenter">
+                    <img src="icones/relogio.png" />
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">regular updates</h4>
+                        <h5>Praesent metus urna, feugiata placerat elementum</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="services flex column acenter">
-                <img src="icones/relogio.png" />
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">regular updates</h4>
-                    <h5>Praesent metus urna, feugiata placerat elementum</h5>
-                </div>
-            </div>
-            <div class="services flex column acenter">
-                <img src="icones/balao.png" />
-                <div class="widget_conteudo_section">
-                    <h4 class="twhite">fast and free suporte</h4>
-                    <h5>Praesent metus urna, feugiata</h5>
+                <div class="services flex column acenter">
+                    <img src="icones/balao.png" />
+                    <div class="widget_conteudo_section">
+                        <h4 class="twhite">fast and free suporte</h4>
+                        <h5>Praesent metus urna, feugiata</h5>
+                    </div>
                 </div>
             </div>
         </div>
@@ -184,7 +288,7 @@
             <h3>what we crate</h3>
         </div>
         <div class="projects_menu">
-            <ul>
+            <ul class="wrap center">
                 <li><a class="active" href="#">all</a></li>
                 <li><a href="#">photos</a></li>
                 <li><a href="#">branding</a></li>
@@ -272,7 +376,7 @@
     </div>
 </section>
 <section id="our_team" class="">
-    <div class="container flex column acenter center">
+    <div class="container paddingsection flex column acenter center">
         <div class="widget_titulo_section">
             <h2 class="twhite">our team</h2>
             <h3>our co-workers</h3>
@@ -305,7 +409,7 @@
                     </div>
                 </div>
             </div>
-            <div class="team team02 flex column center acenter">
+            <div class="team team02 flex column center acenter selected">
                 <img class="photo" src="complementos/homem1.png" />
                 <div class="widget_titulo_section">
                     <h2>mike shiller</h2>
@@ -363,11 +467,11 @@
         </div>
     </div>
 </section>
-<div class="widget_botao flex center">
+<div class="widget_botao for_our_team flex center">
     <div class="container b_slider flex center">
-        <div class="botao_slide active"></div>
-        <div class="botao_slide"></div>
-        <div class="botao_slide"></div>
+        <div class="botao_slide botao_slide1"></div>
+        <div class="botao_slide botao_slide2 active"></div>
+        <div class="botao_slide botao_slide3"></div>
     </div>
 </div>
 <section id="happyclients">
@@ -512,7 +616,7 @@
             <h2>premium</h2>
             <h3>even more features available</h3>
         </div>
-        <div class="conteudo_premium flex center acenter">
+        <div class="conteudo_premium wrap flex center acenter">
             <div class="premium_image flex center acenter">
                 <img src="complementos/livros.png" />
             </div>
@@ -591,44 +695,46 @@
     </div>
 </section>
 <section id="socialshare" class="cont_style_2 flex center acenter">
-    <div class="container flex center">
-        <div class="b_share_share flex acenter">
+    <div class="container wrap flex center">
+        <div class="b_share_share flex acenter center">
             <div class="share flex center acenter">
                 <img src="icones/share.png" alt="twitter">
             </div>
             <h3>tel about us:</h3>
         </div>
-        <div class="b_share flex acenter">
-            <div class="icon_share flex center acenter twitter">
-                <img src="icones/twitter.png" alt="twitter">
+        <div class="div_share flex acenter">
+            <div class="b_share flex acenter">
+                <div class="icon_share flex center acenter twitter">
+                    <img src="icones/twitter.png" alt="twitter">
+                </div>
+                <h6>186</h6>
             </div>
-            <h6>186</h6>
-        </div>
-        <div class="b_share flex acenter">
-            <div class="icon_share flex center acenter linkedin">
-                <img src="icones/linkedin.png" alt="twitter">
+            
+            <div class="b_share flex acenter">
+                <div class="icon_share flex center acenter linkedin">
+                    <img src="icones/linkedin.png" alt="twitter">
+                </div>
+                <h6>59</h6>
             </div>
-            <h6>59</h6>
-        </div>
-        <div class="b_share flex acenter">
-            <div class="icon_share flex center acenter facebook">
-                <img src="icones/facebook.png" alt="twitter">
+            <div class="b_share flex acenter">
+                <div class="icon_share flex center acenter facebook">
+                    <img src="icones/facebook.png" alt="twitter">
+                </div>
+                <h6>894</h6>
             </div>
-            <h6>894</h6>
-        </div>
-        <div class="b_share flex acenter">
-            <div class="icon_share flex center acenter googleplus">
-                <img src="icones/googleplus.png" alt="twitter">
+            <div class="b_share flex acenter">
+                <div class="icon_share flex center acenter googleplus">
+                    <img src="icones/googleplus.png" alt="twitter">
+                </div>
+                <h6>156</h6>
             </div>
-            <h6>156</h6>
-        </div>
-        <div class="b_share flex acenter">
-            <div class="icon_share flex center acenter pinterest">
-                <img src="icones/pinterest.png" alt="twitter">
+            <div class="b_share flex acenter">
+                <div class="icon_share flex center acenter pinterest">
+                    <img src="icones/pinterest.png" alt="twitter">
+                </div>
+                <h6>48</h6>
             </div>
-            <h6>48</h6>
         </div>
-
 
     </div>
 </section>

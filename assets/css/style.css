@@ -11,7 +11,6 @@ a {
 
 body {
     overflow-x: hidden;
-    margin-bottom: 800px;
 }
 
 :root {
@@ -1149,6 +1148,12 @@ body>footer>div>div.footer_area.flex.column.center.acenter.footer3>form>input[ty
     .video_about img {
         width: 90vw;
     }
+    #banner h1{
+        font-size: 35px;
+    }
+    #banner h2{
+        font-size: 16px;
+    }
 }
 
 /* our tem responsive slide */
@@ -1237,14 +1242,25 @@ body>footer>div>div.footer_area.flex.column.center.acenter.footer3>form>input[ty
 }
 
 /*  */
+@media (max-width:500px) {
+    #empresa .container{
+        overflow-x: overlay;
+    }
+    #empresa .logo_empresa{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #empresa .container div:first-child,
+    #empresa .container div:last-child{
+        display: block !important;
+    }
 
+}
 @media (max-width:400px) {
     .footer_area {
         min-width: auto;
     }
 
-    .photo5,
-    .photo6,
     .photo7,
     .photo8 {
         display: none;
@@ -1256,5 +1272,8 @@ body>footer>div>div.footer_area.flex.column.center.acenter.footer3>form>input[ty
 
     .logo_empresa {
         width: 20%;
+    }
+    #banner h1{
+        font-size: 28px;
     }
 }

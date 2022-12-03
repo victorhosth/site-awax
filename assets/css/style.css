@@ -60,6 +60,9 @@ body{
     margin-bottom: 30px;
     background-color: var(--backcolor-destaque);
 }
+.wrap{
+    flex-wrap: wrap;
+}
 
 /* 
 
@@ -69,6 +72,8 @@ Abaixo é o estilo do site
 */
 header{
     background-color: #000;
+    height: 100px;
+    max-height: 100px;
 }
 
 header .logo{
@@ -84,6 +89,7 @@ header nav{
     justify-content: flex-end;
     align-items: center;
     flex: 1;
+    transition: all 0.3s ease-out;
 }
 
 header .container{
@@ -215,12 +221,16 @@ header ul a:hover{
     padding: 60px 0px ;
 }
 .video_about{
+    margin-top: 20px;
     flex:2
 }
 .text_about{
     flex:3;
     padding-right: 35px;
-
+    min-width: 380px;
+}
+.conteudo_about{
+    flex-wrap: wrap;
 }
 .text_about p{
     font-weight: 300;
@@ -244,9 +254,14 @@ header ul a:hover{
     border-right: 2px solid #383838;
     padding: 0px 20px;
     flex:1;
+    min-width: 155px;
+}
+.conteudo_services .flex{
+    flex: 1;
+    min-width: 155.25px;
 }
 
-.services:first-child{
+.conteudo_services .first{
     border-left: 2px solid #383838;
 }
 #our_projects{
@@ -365,23 +380,20 @@ header ul a:hover{
 }
 #our_team .container{
     width: 100%;
-    height: 100vh;
+    height:100vh;
     background-color: rgba(0, 0, 0, 0.733);
 }
 .conteudo_our_team .team{
     padding: 50px 40px 40px 40px;
     background-color: var(--backcolor-white);
-    margin-right: 15px;
-    margin-left: 15px;
+    margin: 15px;
     z-index: 1;
-    min-width: 350px;
+    min-width: 296px;
     border-radius: 5px;
 }
-.conteudo_our_team .team:hover{
-    scale: 1.05;
-    box-shadow: 0px 0px 50px rgb(0 0 0 / 96%);
-    z-index: 2;
 
+.conteudo_our_team{
+    transition: all 0.5s;
 
 }
 .conteudo_our_team .team .photo{
@@ -533,9 +545,12 @@ header ul a:hover{
 }
 #premium .premium_image{
     width:500px;
+    margin-bottom: 30px;
 }
 #premium .conteudo_img{
     flex: 1;
+    min-width:300px;
+    margin-top: 30px;
 }
 .row_premium img{
     width:35px;
@@ -557,6 +572,7 @@ header ul a:hover{
 .conteudo_premium{
     border-bottom: 1px solid #cfcfcf;
     padding-bottom: 30px;
+
 }
 #somefacts{
     background-color: #000;
@@ -617,9 +633,15 @@ header ul a:hover{
 }
 .b_share{
     flex: 1;
+    min-width: 62px;
+    justify-content: center;
 }
 .b_share_share{
     flex: 2;
+    min-width: 150px;
+}
+#socialshare .div_share{
+    flex:5;
 }
 #socialshare h3{
     font-size: 14px;
@@ -628,6 +650,8 @@ header ul a:hover{
     font-weight: 400;
     text-transform: uppercase;
 }
+
+
 #socialshare h6{
     margin-left: 5px;
     font-weight: 300;
@@ -777,4 +801,153 @@ body > footer > div > div.footer_area.flex.column.center.acenter.footer3 > form 
     text-align: center;
     color: #9e9e9e;
 }
+.menuMobile {
+    background-color: rgb(255 255 255 / 5%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 25px;
+    padding: 5px 6px;
+    width: 45px;
+    height: 40px;
+}
+.mm_line {
+    transition: all 200ms cubic-bezier(0.39, 0.58, 0.57, 1);
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.menuMobile.x{
+    justify-content: center;
+}
+.menuMobile .mm_line1.x{
+    rotate: 45deg;
+    margin-bottom: -1.5px;
+}
+.menuMobile .mm_line2.x{
+    display: none;
+}
+.menuMobile .mm_line3.x{
+    rotate: -45deg;
+    margin-top: -1.5px;
+}
+.menu_oculto{
+    right: -300px;
+}
+.menu_show{
+    right:0px;
+}
+.menuMobile{
+    display: none;
+}
+.widget_botao.for_our_team{
+    display: none;
+}
+
+
+/*responsividade css*/
+
+/* Menu mobile*/
+@media (max-width:964px){
+    header{
+        overflow-x: hidden;
+    }
+    header ul{
+        display: block;
+    }
+    header ul a{
+        height: 50px;
+    }
+    header nav{
+        position: absolute;
+        top: 100px;
+        width: 300px;
+        justify-content: flex-start;
+        padding-left: 20px;
+        height: calc(100vh - 100px);
+        background-color: #000000fa;
+        z-index: 9999;
+    }
+    .menuMobile{
+        display: flex;
+    }
+
+}
+
+@media (max-width:650px){
+    .services, .conteudo_services .first{
+        border:none;
+    }
+    .conteudo_services .divider{
+        min-width: 180px !important;
+    }
+    .projects_menu ul a{
+        font-size: 12px;
+        height:40px;
+    }
+    .projects_menu{
+        padding: 2px 10px;
+    }
+    .photo9, .photo10, .photo11, .photo12{
+        display: none;
+    }
+    .text_about{
+        padding:0px;
+        align-items: center;
+    }
+    header nav{
+        width:   230px;
+    }
+    .menu_oculto{
+        right: -230px;
+    }
+
+}
+
+/* our tem responsive slide */
+
+@media (max-width:1020px){
+    #our_team {
+        overflow-x: hidden;
+    }
+    .conteudo_our_team{
+        width: 150vw;
+        margin-bottom: 30px;
+    }
+    .conteudo_our_team .team{
+        width: 50vw;
+        opacity: 0.5;
+        scale: 0.8;
+        transition: all 200ms cubic-bezier(0.39, 0.58, 0.57, 1);
+        cursor: pointer;
+        padding: 30px 10px;
+    }
+    .widget_botao.for_our_team{
+        display: flex !important;
+    }
+    #our_team .team.selected{
+        opacity: 1 !important;
+        scale: 1;
+        cursor:default;
+    }
+    #our_team .container{
+        box-shadow: inset 0px 0px 150px #000;
+        height: auto;
+        padding: 25px 15px;
+    }
+    #our_team .widget_titulo_section h3{
+        margin-bottom: 20px;
+    }
+
+
+}
+@media (min-width:1020px){
+    .conteudo_our_team{
+        margin-left: 0px !important;
+    }
+}
+
 
